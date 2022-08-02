@@ -1,0 +1,441 @@
+/* VARIABLES */
+
+:root{
+  --main-title-color : #24303E;
+  --text-color:#808397;
+  --yellow-color: #FBD600;
+  /* --main-font-size : 16px; */
+  /* --main-font-weight : 400; */
+  /* --main-line-height : 1.5; */
+}
+
+/* GENERAL */
+
+
+/* barlow-600 - latin */
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''),
+  url('../fonts/barlow-v12-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/barlow-v12-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* fraunces-700 - latin */
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+  url('../fonts/fraunces-v23-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/fraunces-v23-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* fraunces-900 - latin */
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  src: local(''),
+  url('../fonts/fraunces-v23-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/fraunces-v23-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+*{
+  box-sizing: border-box;
+}
+html{
+  height: 100%;
+  box-sizing: border-box;
+}
+
+img{
+  display: block;
+  height: auto;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow", "Arial", sans-serif;
+  /* font-size: 16px; */
+  /* font-weight: 400; */
+  /* line-height: var(--main-line-height); */
+}
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* CONTAINER */
+
+.container{
+  width: 100%;
+  max-width: 1150px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+/* STICKY-FOOTER */
+.site-main{
+  flex-grow: 1;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+
+
+.site-header{
+  padding: 34px 0;
+  background-color: #4ABDF2;
+}
+
+.site-header__wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header__left{
+  display: none;
+  align-items: center;
+}
+
+.site-nav__list{
+  display: flex;
+}
+
+.site-nav__item{
+  margin-right: 47px;
+}
+
+.site-nav__link{
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.128571px;
+  color: #FFFFFF;
+}
+
+.contact{
+  display: inline-block;
+  padding: 15px 30px;
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: -0.107143px;
+  text-transform: uppercase;
+  color: var(--main-title-color);
+  background-color: #FBD600;
+  border-radius: 28px;
+}
+
+
+.hamburg{
+  width: 24px;
+  height: 18px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../images/hamburg.svg");
+  background-repeat: no-repeat;
+}
+
+.hero{
+  padding-bottom: 296px;
+  background-image: url("../images/lemon-mobile.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero__box{
+  max-width: 750px;
+  margin: 0 auto;
+  padding-top: 80px;
+  text-align: center;
+}
+
+.hero__title{
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 49px;
+  text-align: center;
+  letter-spacing: 6.25px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.hero__title{
+  margin: 0;
+}
+
+
+.fruits__top{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.fruits__top--info{
+  width: 100%;
+  max-width: 445px;
+  margin: 0 auto;
+  padding: 64px 5px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.fruits__title{
+  margin-bottom: 24px;
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 39px;
+  letter-spacing: -0.228571px;
+  color: var(--main-title-color);
+}
+
+.fruits__text{
+  margin-bottom: 32px;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.128571px;
+  color: #808397;
+}
+
+.fruits__link{
+  display: inline-block;
+  position: relative;
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--main-title-color);
+}
+
+.fruits__link::before{
+  position: absolute;
+  width: 137px;
+  height: 10px;
+  bottom: 0;
+  left: -10px;
+  background-color: #FAD400;
+  opacity: 0.25;
+  border-radius: 28px;
+  content: "";
+}
+
+.fruits__center{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.red::before{
+  background-color:#FE7766 ;
+}
+
+
+.fruits__centerimg{
+  width: 100%;
+}
+
+.audience{
+  width: 100%;
+}
+
+.fruit__title--box{
+  max-width: 445px;
+}
+
+.fruits__bottom{
+  display: flex;
+  flex-direction: column;
+}
+
+.fruit__cherry{
+  width: 100%;
+  padding-bottom: 30px;
+  background-image: url("../images/cherry-mobile.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+}
+
+.fruit__orange{
+  width: 100%;
+  padding-bottom: 30px;
+  background-image: url("../images/apelsin-mobile.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+}
+
+.cherry{
+  width: 100%;
+  padding-top: 350px;
+  max-width: 339px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: auto;
+  text-align: center;
+}
+
+.cherry__title{
+  margin-bottom: 27px;
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 35px;
+  letter-spacing: -0.2px;
+  color: #24554A;
+}
+
+.cherry__text{
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: -0.114286px;
+  color: #24554A;
+}
+
+
+
+
+/* Media */
+@media screen and (min-width:376px) {
+  .hero{
+    background-color: #4ABDF2;
+    background-image: url("../images/lemondk.png");
+    background-size: 865px;
+    background-position: center;
+    
+  }
+}
+
+@media screen and (min-width:768px) {
+  .site-header__left{
+    display: flex;
+  }
+  
+  .hamburg{
+    display: none;
+  }
+  
+  .contact{
+    color: #fff;
+    background: #ffffff2a;
+  }
+  
+  .hero{
+    background-color: #4ABDF2;
+    background-image: url("../images/lemondk.png");
+    background-size: 765px;
+    background-position: center;
+    
+  }
+}
+
+@media screen and (min-width:580px) {
+  .fruit__cherry{
+  width: 100%;
+  padding-bottom: 30px;
+  background-image: url("../images/cherrydk.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  }
+
+  .fruit__orange{
+    width: 100%;
+
+    /* padding-bottom: 30px; */
+    background-image: url("../images/apelsin-dk.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+}
+
+@media screen and (min-width:1024px) {
+  .fruits__top{
+    flex-direction: row-reverse;
+    
+  }
+  
+  .fruits__img{
+    width: 50%;
+  }
+  
+  .fruits__top--info{
+    width: 50%;
+    padding-right: 30px;
+    padding-left: 60px;
+    text-align: left;
+  }
+  
+  .fruits__center{
+    flex-direction: row;
+  }
+  
+  .fruits__centerimg{
+    width: 50%;
+  }
+  
+  .fruits__top--info{
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 530px;
+  }
+
+  .fruits__bottom{
+    padding: 0;
+    flex-direction: row;
+  }
+
+}
+
+
+@media screen and (min-width:1200px) {
+  .fruits__top--info{
+    padding: 0;
+  }
+
+  .fruit__orange,
+  .fruit__cherry{
+    padding-top: 100px;
+  }
+}
+
+
